@@ -10,4 +10,8 @@ class UserAddress extends Model
     use HasFactory;
     protected $table = 'user_domicilio';
 
+
+    public function user(){
+        $this->belongsTo(User::class);
+    }
 }
